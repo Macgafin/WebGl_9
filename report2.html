@@ -86,12 +86,12 @@
         
         //ロード
         var textureLoader = new THREE.TextureLoader();  
-
+        //ランダム街路樹
         var texture = textureLoader.load("img/tree0.png");
         const material = new THREE.SpriteMaterial({ map: texture,})
         for (let i = 0; i < 3; i++) {
           const sprite = new THREE.Sprite(material);
-          // ランダムな座標に配置
+        // ランダムな座標に配置
           sprite.position.x = 2 * (Math.random() - 0.5);
           sprite.position.y = 0.5 * Math.random();
           sprite.position.z = 2 * (Math.random() - 0.5);
